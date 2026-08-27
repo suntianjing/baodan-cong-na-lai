@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第6季 · 理赔：出险之后 · 保单从哪来</title>
+<style>
+:root{--orange:#E87B2A;--navy:#1F3A5F;--cream:#F7F1E8;--stamp:#C44536}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#111;color:var(--navy);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;-webkit-text-size-adjust:100%}
+.phone{max-width:430px;margin:0 auto;background:var(--cream);min-height:100vh;padding-bottom:72px}
+img{display:block;width:100%;height:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(247,241,232,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(31,58,95,.08);overflow-x:auto;white-space:nowrap;padding:10px 12px;-webkit-overflow-scrolling:touch}
+.nav a{display:inline-block;margin-right:8px;padding:6px 12px;border-radius:999px;background:#fff;color:var(--navy);text-decoration:none;font-size:13px;border:1px solid rgba(31,58,95,.12)}
+.nav a.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.season{padding:20px 16px 8px;font-size:13px;letter-spacing:.08em;color:var(--orange);font-weight:700}
+.ep h2{padding:10px 16px 8px;font-size:17px;line-height:1.35}
+.ep h2 span{color:var(--orange);margin-right:6px}
+.card{margin:10px 16px;padding:12px 14px;background:#fffdf8;border-radius:12px;border:1px solid rgba(31,58,95,.08)}
+.card .k{font-size:12px;color:var(--orange);font-weight:700;margin-bottom:4px}
+.card.fe .k{color:var(--navy)}
+.card p{font-size:15px;line-height:1.65}
+.note{font-size:13px;color:#6b7280;line-height:1.55}
+.foot{text-align:center;padding:24px 16px 40px;font-size:12px;color:#888}
+.toc a{display:block;padding:12px 0;border-bottom:1px solid rgba(31,58,95,.08);color:var(--navy);text-decoration:none;font-size:15px}
+.toc{padding:4px 16px 20px}
+.toc a b{color:var(--orange);margin-right:8px}
+.hero{padding:20px 16px 8px}
+.hero h1{font-size:26px;line-height:1.25;color:var(--navy)}
+.hero p{margin-top:8px;font-size:14px;color:#4b5563;line-height:1.5}
+</style>
+</head><body><div class="phone">
+<nav class="nav"><a href="index.html">目录</a><a class="" href="s1.html">第1季</a><a class="" href="s2.html">第2季</a><a class="" href="s3.html">第3季</a><a class="" href="s4.html">第4季</a><a class="" href="s5.html">第5季</a><a class="active" href="s6.html">第6季</a><a class="" href="s7.html">第7季</a></nav>
+<div class="season" id="s6">第6季 · 理赔：出险之后 · 27-30</div>
+<article class="ep" id="ep27"><h2><span>27</span>理赔全流程</h2><img src="pages/ep27.svg" alt="27 理赔全流程" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>报案 → 查勘 → 定损 → 核赔 → 结案支付。中间常要交材料。每一步都是案件状态，不是一张表。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>理赔页是状态机。当前状态决定能亮哪些按钮，不要把所有操作一排摆出来。</p></div></article><article class="ep" id="ep28"><h2><span>28</span>车险理赔现场</h2><img src="pages/ep28.svg" alt="28 车险理赔现场" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>先处理人，再处理车。交强险和商业险可能分项赔。定损金额不是最终赔款，核赔才会拍板。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>车险理赔最少要串：报案号、责任认定、查勘照片、定损单、维修/赔款账户。定损中不要显示「已赔付」。</p></div></article><article class="ep" id="ep29"><h2><span>29</span>非车险理赔现场</h2><img src="pages/ep29.svg" alt="29 非车险理赔现场" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>非车险先问：这是不是保单责任。货损、意外、责任，查勘对象完全不同。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>非车险理赔的立案信息是保单号+出险经过+标的损失，不要套用车辆查勘组件。</p></div></article><article class="ep" id="ep30"><h2><span>30</span>前端为什么会碰到理赔页</h2><img src="pages/ep30.svg" alt="30 前端为什么会碰到理赔页" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>理赔对前端的核心不是表单，是状态：案件到哪一步，谁能看、谁能点、超时要提示。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>用明确的状态枚举驱动 UI。把「查勘中不能申请支付」做成规则，而不是隐藏的约定。</p></div></article><div class="foot"><a href="index.html" style="color:var(--orange)">回目录</a></div></div></body></html>
