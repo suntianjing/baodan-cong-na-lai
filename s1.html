@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第1季 · 保险基础 · 保单从哪来</title>
+<style>
+:root{--orange:#E87B2A;--navy:#1F3A5F;--cream:#F7F1E8;--stamp:#C44536}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#111;color:var(--navy);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;-webkit-text-size-adjust:100%}
+.phone{max-width:430px;margin:0 auto;background:var(--cream);min-height:100vh;padding-bottom:72px}
+img{display:block;width:100%;height:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(247,241,232,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(31,58,95,.08);overflow-x:auto;white-space:nowrap;padding:10px 12px;-webkit-overflow-scrolling:touch}
+.nav a{display:inline-block;margin-right:8px;padding:6px 12px;border-radius:999px;background:#fff;color:var(--navy);text-decoration:none;font-size:13px;border:1px solid rgba(31,58,95,.12)}
+.nav a.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.season{padding:20px 16px 8px;font-size:13px;letter-spacing:.08em;color:var(--orange);font-weight:700}
+.ep h2{padding:10px 16px 8px;font-size:17px;line-height:1.35}
+.ep h2 span{color:var(--orange);margin-right:6px}
+.card{margin:10px 16px;padding:12px 14px;background:#fffdf8;border-radius:12px;border:1px solid rgba(31,58,95,.08)}
+.card .k{font-size:12px;color:var(--orange);font-weight:700;margin-bottom:4px}
+.card.fe .k{color:var(--navy)}
+.card p{font-size:15px;line-height:1.65}
+.note{font-size:13px;color:#6b7280;line-height:1.55}
+.foot{text-align:center;padding:24px 16px 40px;font-size:12px;color:#888}
+.toc a{display:block;padding:12px 0;border-bottom:1px solid rgba(31,58,95,.08);color:var(--navy);text-decoration:none;font-size:15px}
+.toc{padding:4px 16px 20px}
+.toc a b{color:var(--orange);margin-right:8px}
+.hero{padding:20px 16px 8px}
+.hero h1{font-size:26px;line-height:1.25;color:var(--navy)}
+.hero p{margin-top:8px;font-size:14px;color:#4b5563;line-height:1.5}
+</style>
+</head><body><div class="phone">
+<nav class="nav"><a href="index.html">目录</a><a class="active" href="s1.html">第1季</a><a class="" href="s2.html">第2季</a><a class="" href="s3.html">第3季</a><a class="" href="s4.html">第4季</a><a class="" href="s5.html">第5季</a><a class="" href="s6.html">第6季</a><a class="" href="s7.html">第7季</a></nav>
+<div class="season" id="s1">第1季 · 保险基础 · 01-05</div>
+<article class="ep" id="ep01"><h2><span>01</span>保险到底在卖什么</h2><img src="pages/ep01.svg" alt="01 保险到底在卖什么" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>保险卖的不是一张纸，是「约定事故发生了，公司按合同赔钱」的承诺。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>投保页的「立即投保」不是电商下单，是客户向公司发出「我想订这份合同」的申请（法律上叫要约）。</p></div></article><article class="ep" id="ep02"><h2><span>02</span>这单上到底有几个人</h2><img src="pages/ep02.svg" alt="02 这单上到底有几个人" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>付钱的、被保的、领钱的，经常不是同一个人。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>表单里投保人、被保险人、受益人是三种角色，不要做成同一个字段的三个别名。</p></div><div class="card"><div class="k">别混</div><p class="note">财产险通常没有「受益人」这个角色，保险金付给被保险人。不要在车险页强行做受益人。</p></div></article><article class="ep" id="ep03"><h2><span>03</span>保费、保额、费率</h2><img src="pages/ep03.svg" alt="03 保费、保额、费率" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>保额是赔付天花板，保费是买这份承诺的价格，费率是怎么算出这个价格。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>报价接口返回的是保费；保额是用户或方案选的；费率一般不给用户看，但算费因子要传对。</p></div></article><article class="ep" id="ep04"><h2><span>04</span>保什么，和不保什么</h2><img src="pages/ep04.svg" alt="04 保什么，和不保什么" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>先看保险责任（保什么），再看责任免除（明确不保什么）。免赔是赔的时候自己先扛一截；等待期是刚买完一段时间内某些事故先不赔。三件事别混。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>产品详情页不要只炫「保什么」。免除条款必须能被看到，这是合同的一半。</p></div><div class="card"><div class="k">别混</div><p class="note">免赔额/免赔率≠责任免除≠等待期。免赔是「赔多少时先扣一截」；责任免除是「这类事根本不在保障里」；等待期是「刚生效的一段日子里某些事故先不赔」。</p></div></article><article class="ep" id="ep05"><h2><span>05</span>车险和非车险为什么要拆开</h2><img src="pages/ep05.svg" alt="05 车险和非车险为什么要拆开" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>车险围着「这辆车」转，还有法定的交强险；非车险是剩下那一大筐，标的各不相同。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>车险页先问车牌和车型，非车险页先问保的是人、货、责任还是财产。两套信息架构不要硬套。</p></div></article><div class="foot"><a href="index.html" style="color:var(--orange)">回目录</a></div></div></body></html>

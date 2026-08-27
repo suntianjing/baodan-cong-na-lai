@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第2季 · 承保：保单怎么来 · 保单从哪来</title>
+<style>
+:root{--orange:#E87B2A;--navy:#1F3A5F;--cream:#F7F1E8;--stamp:#C44536}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#111;color:var(--navy);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;-webkit-text-size-adjust:100%}
+.phone{max-width:430px;margin:0 auto;background:var(--cream);min-height:100vh;padding-bottom:72px}
+img{display:block;width:100%;height:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(247,241,232,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(31,58,95,.08);overflow-x:auto;white-space:nowrap;padding:10px 12px;-webkit-overflow-scrolling:touch}
+.nav a{display:inline-block;margin-right:8px;padding:6px 12px;border-radius:999px;background:#fff;color:var(--navy);text-decoration:none;font-size:13px;border:1px solid rgba(31,58,95,.12)}
+.nav a.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.season{padding:20px 16px 8px;font-size:13px;letter-spacing:.08em;color:var(--orange);font-weight:700}
+.ep h2{padding:10px 16px 8px;font-size:17px;line-height:1.35}
+.ep h2 span{color:var(--orange);margin-right:6px}
+.card{margin:10px 16px;padding:12px 14px;background:#fffdf8;border-radius:12px;border:1px solid rgba(31,58,95,.08)}
+.card .k{font-size:12px;color:var(--orange);font-weight:700;margin-bottom:4px}
+.card.fe .k{color:var(--navy)}
+.card p{font-size:15px;line-height:1.65}
+.note{font-size:13px;color:#6b7280;line-height:1.55}
+.foot{text-align:center;padding:24px 16px 40px;font-size:12px;color:#888}
+.toc a{display:block;padding:12px 0;border-bottom:1px solid rgba(31,58,95,.08);color:var(--navy);text-decoration:none;font-size:15px}
+.toc{padding:4px 16px 20px}
+.toc a b{color:var(--orange);margin-right:8px}
+.hero{padding:20px 16px 8px}
+.hero h1{font-size:26px;line-height:1.25;color:var(--navy)}
+.hero p{margin-top:8px;font-size:14px;color:#4b5563;line-height:1.5}
+</style>
+</head><body><div class="phone">
+<nav class="nav"><a href="index.html">目录</a><a class="" href="s1.html">第1季</a><a class="active" href="s2.html">第2季</a><a class="" href="s3.html">第3季</a><a class="" href="s4.html">第4季</a><a class="" href="s5.html">第5季</a><a class="" href="s6.html">第6季</a><a class="" href="s7.html">第7季</a></nav>
+<div class="season" id="s2">第2季 · 承保：保单怎么来 · 06-12</div>
+<article class="ep" id="ep06"><h2><span>06</span>投保：把风险写成一张单</h2><img src="pages/ep06.svg" alt="06 投保：把风险写成一张单" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>投保是客户在申请，合同还没成立。这时候的单叫投保单，不叫保单。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>投保提交成功 ≠ 已承保。状态应该是「已投保/待核保」，别把保单号提前展示成已生效。</p></div></article><article class="ep" id="ep07"><h2><span>07</span>核保：接不接、怎么接</h2><img src="pages/ep07.svg" alt="07 核保：接不接、怎么接" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>核保是公司在挑风险：正常过、加费、除外、拒保，都是核保结论。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>核保中不要让用户以为已经买上。前端要能展示：通过 / 加费待确认 / 拒保，并允许加费后重新提交。</p></div></article><article class="ep" id="ep08"><h2><span>08</span>承保出单：保单号诞生</h2><img src="pages/ep08.svg" alt="08 承保出单：保单号诞生" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>承保完成，合同成立，保单号才算正式出生。保单是合同的书面证明；没出纸，合同仍可能已经成立。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>出单后才展示保单号、保险期间、电子保单。收钱和出单的时序要问清楚：有的险种先出单后收费，有的必须缴清才生效。</p></div></article><article class="ep" id="ep09"><h2><span>09</span>非车险：从投保走到出单</h2><img src="pages/ep09.svg" alt="09 非车险：从投保走到出单" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>非车险走同一条链：投保 → 核保 → 承保出单。但「保的是什么」决定了中间要填哪些东西。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>非车险出单页的主信息是标的和方案，不是车牌。不要复用车险的车辆组件。</p></div></article><article class="ep" id="ep10"><h2><span>10</span>车险：交强险和商业险为什么常一起出</h2><img src="pages/ep10.svg" alt="10 车险：交强险和商业险为什么常一起出" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>交强险是法定必买，只管车外第三者；商业险是自愿加的，用来修车、赔本车人员、补第三者限额。两张保单，经常一次录、一次出。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>一次投保可能生成两张保单（交强险一张、商业险一张）。订单不要做成「一个保单号打天下」。</p></div><div class="card"><div class="k">别混</div><p class="note">交强险不赔本车、不赔车上的人。自己撞墙上，交强险帮不了，要靠商业险里的车损险。</p></div></article><article class="ep" id="ep11"><h2><span>11</span>车险和非车险，承保差在哪</h2><img src="pages/ep11.svg" alt="11 车险和非车险，承保差在哪" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>车险看「这辆车+这个人+这个地区」；非车险看「这个标的+这套方案」。核保规则、平台、单证都不一样。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>不要用同一套校验和同一套状态机硬套两套业务。地区码在车险几乎是一等公民。</p></div></article><article class="ep" id="ep12"><h2><span>12</span>承保系统在干什么</h2><img src="pages/ep12.svg" alt="12 承保系统在干什么" loading="lazy"><div class="card"><div class="k">记住这一句</div><p>承保系统不是「存表单的数据库」，它在做：录单、校验、报价、核保、出单、对接平台和收付。</p></div><div class="card fe"><div class="k">前端会碰到</div><p>前端每个按钮对应一种承保决策。提交、暂存、报价、送核、出单，不要合成一个万能保存。</p></div></article><div class="foot"><a href="index.html" style="color:var(--orange)">回目录</a></div></div></body></html>
