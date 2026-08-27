@@ -8,7 +8,7 @@
     function next(){
       if(i>=n){ img.src = "data:image/jpeg;base64," + parts.join(""); return; }
       fetch(dir + id + "." + i + ".txt").then(function(r){ return r.text(); }).then(function(t){
-        parts.push(t.trim()); i++; next();
+        parts.push(String(t).replace(/\s+/g, "")); i++; next();
       }).catch(function(){ img.alt = "图加载失败"; });
     }
     next();
